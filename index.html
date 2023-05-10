@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IRON GUYS</title>
+    <style>
+        .tab {
+            display: none;
+        }
+
+        .tab.active {
+            display: block;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .gif-background {
+            font-size: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-image: url(fire.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* Outras propriedades de estilo */
+        }
+
+        @font-face {
+            font-family: 'Death';
+            src: url('death.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'Lucida Sans';
+            background-color: rgba(0, 0, 0, 0.945);
+            color: white;
+        }
+
+        .icone-pentagram {
+            height: 15px;
+            width: 15px;
+        }
+
+        .titulo {
+            display: block;
+        }
+
+        .subtitulo {
+            font-size: 15px;
+        }
+
+        .cardIntegrante {
+            display: flex;
+            margin-top: 50px;
+        }
+
+        .descricaoIntegrante {
+            margin-left: 20px;
+            border-radius: 5px;
+        }
+
+        .fotoIntegrante {
+            height: 500px;
+            width: 400px;
+            border-radius: 50%;
+            opacity: 0;
+            /* começa com opacidade 0 */
+            animation-name: fade-in;
+            /* nome da animação */
+            animation-duration: 4s;
+            /* duração da animação */
+            animation-fill-mode: forwards;
+            /* mantém a opacidade no fim da animação */
+        }
+
+        .texto {
+            line-height: normal;
+            text-align: justify;
+            background-color: azure;
+            color: black;
+        }
+
+        h3{
+            color: red;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                /* começa com opacidade 0 */
+            }
+
+            to {
+                opacity: 1;
+                /* termina com opacidade 1 */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#" onclick="mostrarTab(1)"> <img class="icone-pentagram" src="pentagram.gif" alt=""> Home</a>
+            </li>
+            <li><a href="#" onclick="mostrarTab(2)"> <img class="icone-pentagram" src="pentagram.gif" alt="">
+                    Integrantes</a></li>
+            <li><a href="#" onclick="mostrarTab(3)"> <img class="icone-pentagram" src="pentagram.gif" alt=""> Sobre a
+                    banda</a></li>
+            <li><a href="#" onclick="mostrarTab(4)"> <img class="icone-pentagram" src="pentagram.gif" alt=""> Contato
+            </li>
+        </ul>
+    </nav>
+
+    <div id="tab1" class="tab active">
+        <div class="gif-background">
+            <div class="titulo">
+                <div>IRON GUYS </div>
+                <div class="subtitulo">metal band </div>
+            </div>
+        </div>
+    </div>
+    <div id="tab2" class="tab">
+        <div class="cardIntegrante">
+            <div>
+                <img class="fotoIntegrante" src="adonay.jpeg" alt="">
+            </div>
+            <div class="descricaoIntegrante">
+                <h3> ADONAY DOUGLAS </h3>
+                <h4> GUITARRISTA</h4>
+                <p class="texto">
+                    Resumo: Guitarrista com vasta experiência em Death Metal, com mais de 10 anos de carreira. Tocou em
+                    várias bandas importantes do gênero e tem um repertório extenso. <br />
+
+                    Experiência Profissional:<br />
+
+                    Guitarrista principal da banda "Morbid Carnage" (2015 - presente): Nessa banda, Adonay Douglas é
+                    responsável por criar riffs e solos de guitarra para as músicas, além de tocar em shows e gravar em
+                    estúdio. Com a "Morbid Carnage", Adonay já fez várias turnês internacionais e gravou três álbuns de
+                    estúdio que receberam críticas positivas da imprensa especializada.<br />
+
+                    Guitarrista da banda "Desecration" (2010 - 2015): Nessa banda, Adonay foi responsável por compor
+                    grande parte das músicas, além de tocar em shows e gravações. Com a "Desecration", Adonay tocou em
+                    vários festivais importantes, incluindo o "Brutal Fest" e o "Death Metal Meeting", e gravou dois
+                    álbuns de estúdio.<br />
+
+                    Guitarrista da banda "Bloodbath" (2008 - 2010): Nessa banda, Adonay ganhou destaque na cena do Death
+                    Metal nacional e internacional. Tocou em shows e gravou o álbum "Resurrection of the Dead" que foi
+                    muito elogiado pela crítica especializada.<br />
+
+                    Habilidades:<br />
+
+                    Técnica avançada de guitarra, incluindo sweep picking, tapping e legato.
+                    Conhecimento avançado de teoria musical, incluindo escalas, modos e harmonia.
+                    Grande conhecimento e experiência no estilo Death Metal, incluindo subgêneros como deathcore e
+                    melodic death metal.
+                    Habilidade em compor riffs e solos de guitarra para músicas de metal extremo.
+                    Experiência em gravação em estúdio e mixagem.<br />
+                    Formação:<br />
+
+                    Graduação em Música pela Universidade de São Paulo (2007 - 2011)
+                    Cursos de guitarra com importantes guitarristas do cenário do metal, como Michael Angelo Batio e
+                    Alexi Laiho.<br />
+                    Interesses:<br />
+
+                    Adonay Douglas é apaixonado por música e dedica grande parte do seu tempo livre a estudar novas
+                    técnicas de guitarra e a compor novas músicas. Além disso, é um grande fã de bandas de Death Metal,
+                    como Cannibal Corpse, Morbid Angel e Behemoth, e adora ir a shows e festivais de metal<br />
+                </p>
+            </div>
+
+        </div>
+        <div class="cardIntegrante">
+            <div>
+                <img class="fotoIntegrante" src="davi.jpeg" alt="">
+            </div>
+            <div class="descricaoIntegrante">
+                <h3> DAVI MARQUES</h3>
+                <h4> GUITARRISTA</h4>
+                <p class="texto">
+                    Resumo: Guitarrista experiente com mais de 15 anos de carreira, focado nos estilos de jazz, samba e
+                    bossa nova. Possui uma grande habilidade em improvisação e já se apresentou em diversos palcos
+                    nacionais e internacionais. <br />
+
+                    Experiência Profissional: <br />
+
+                    Guitarrista na banda "Bossa Combo" (2015 - presente): Nessa banda, Davi é responsável por criar
+                    arranjos de guitarra para as músicas de bossa nova e samba, além de tocar em shows e gravações. Com
+                    a "Bossa Combo", Davi já tocou em diversos eventos importantes, incluindo o Festival de Jazz de
+                    Montreux, na Suíça. <br />
+
+                    Guitarrista na banda "Jazz Connection" (2010 - 2015): Nessa banda, Davi se dedicou ao jazz e foi
+                    responsável por criar solos de guitarra e improvisar em apresentações ao vivo. Com a "Jazz
+                    Connection", Davi tocou em diversos clubes de jazz importantes no Brasil e também se apresentou em
+                    festivais internacionais, como o Festival de Jazz de Havana, em Cuba. <br />
+
+                    Guitarrista na banda "Samba dos Amigos" (2005 - 2010): Nessa banda, Davi se dedicou ao samba e foi
+                    responsável por criar arranjos de guitarra e improvisar em shows. Com a "Samba dos Amigos", Davi
+                    tocou em diversos eventos importantes, incluindo o Carnaval do Rio de Janeiro. <br />
+
+                    Habilidades: <br />
+
+                    Grande habilidade em improvisação, principalmente no estilo jazzístico.
+                    Conhecimento avançado de harmonia, escalas e acordes.
+                    Grande conhecimento e experiência nos estilos de jazz, samba e bossa nova.
+                    Habilidade em compor arranjos e solos de guitarra para músicas desses estilos.
+                    Experiência em gravação em estúdio e mixagem.<br />
+                    Formação:<br />
+
+                    Graduação em Música pela Universidade Federal do Rio de Janeiro (2002 - 2006)
+                    Cursos de guitarra com importantes guitarristas do cenário do jazz e da música brasileira, como
+                    Toninho Horta e Mike Stern.<br />
+                    Interesses:<br />
+
+                    Davi Marques é apaixonado por música e dedica grande parte do seu tempo livre a estudar novas
+                    técnicas de guitarra e a compor novas músicas. Além disso, é um grande fã de músicos de jazz e
+                    brasileiros, como Tom Jobim, João Gilberto e Miles Davis, e adora ir a shows e festivais desses
+                    estilos musicais.<br />
+                </p>
+            </div>
+
+        </div>
+        <div class="cardIntegrante">
+            <div>
+                <video class="fotoIntegrante" src="violla.mp4"></video>
+            </div>
+            <div class="descricaoIntegrante">
+                <h3> RODRIGO VIOLLA</h3>
+                <h4> BAIXISTA</h4>
+                <p class="texto">
+                    Resumo: Baixista experiente com mais de 15 anos de carreira, com foco no estilo power metal. Possui
+                    grande habilidade em tocar baixo em altas velocidades e com precisão, além de dominar técnicas
+                    avançadas como tapping e slapping. Já se apresentou em diversos festivais nacionais e internacionais
+                    de metal. <br />
+
+                    Experiência Profissional:<br />
+
+                    Baixista na banda "Dragonforce Brasil" (2015 - presente): Nessa banda, Rodrigo é responsável pelo
+                    baixo nas músicas de power metal da banda, que são conhecidas pela sua complexidade e velocidade.
+                    Com a "Dragonforce Brasil", Rodrigo já tocou em diversos eventos importantes, incluindo o Wacken
+                    Open Air, na Alemanha.<br />
+
+                    Baixista na banda "Power Symphony" (2010 - 2015): Nessa banda, Rodrigo também se dedicou ao power
+                    metal e foi responsável por criar linhas de baixo complexas e técnicas para as músicas. Com a "Power
+                    Symphony", Rodrigo tocou em diversos shows pelo Brasil e também se apresentou em festivais
+                    internacionais, como o ProgPower USA, nos Estados Unidos.<br />
+
+                    Baixista na banda "Hibria" (2006 - 2010): Nessa banda, Rodrigo teve a oportunidade de se apresentar
+                    em diversos shows e festivais de metal pelo Brasil e pelo mundo, com destaque para o show de
+                    abertura do Iron Maiden em São Paulo, em 2008.<br />
+
+                    Habilidades:<br />
+
+                    Grande habilidade em tocar baixo em altas velocidades e com precisão.
+                    Domínio de técnicas avançadas como tapping, slapping e sweep picking.
+                    Grande conhecimento e experiência no estilo power metal.
+                    Habilidade em compor linhas de baixo complexas e técnicas para músicas de metal.
+                    Experiência em gravação em estúdio e mixagem.<br />
+                    Formação:<br />
+
+                    Curso de baixo com importantes baixistas do cenário do metal, como Billy Sheehan e Steve Harris.
+                    Formação em música pela Universidade de São Paulo (2002 - 2006).<br />
+                    Interesses:<br />
+
+                    Rodrigo Violla é um grande fã de metal e dedica grande parte do seu tempo livre a ouvir novas bandas
+                    e a estudar novas técnicas de baixo para metal. Além disso, é um grande fã de bandas de power metal,
+                    como Helloween e Stratovarius, e adora ir a shows e festivais desse estilo musical. Fora da música,
+                    Rodrigo também gosta de praticar esportes, como corrida e musculação.<br />
+                </p>
+            </div>
+
+        </div>
+        <div>
+            davi
+        </div>
+    </div>
+    <div id="tab3" class="tab">
+        <h2>Aba 3</h2>
+        <p>Conteúdo da Aba 3</p>
+    </div>
+    <div id="tab4" class="tab">
+        <h2>Aba 4</h2>
+        <p>Conteúdo da Aba 4</p>
+    </div>
+    <div id="tab5" class="tab">
+        <h2>Aba 5</h2>
+        <p>Conteúdo da Aba 5</p>
+    </div>
+
+    <script>
+        function mostrarTab(n) {
+            // esconde todas as abas
+            var abas = document.getElementsByClassName("tab");
+            for (var i = 0; i < abas.length; i++) {
+                abas[i].classList.remove("active");
+            }
+            // mostra a aba selecionada
+            var tab = document.getElementById("tab" + n);
+            tab.classList.add("active");
+        }
+    </script>
+</body>
+
+</html>
